@@ -7,6 +7,8 @@ const port = 4001;
 //* IMPORT OUR router.js CODE
 const router = require('./app/routes/router')
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true,}));
 
 
 // app.get('/europe', (req, res) => {

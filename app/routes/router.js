@@ -6,8 +6,12 @@ const express = require('express');
 //*     https://localhost:4000/api/destinations
 const router = express.Router()
 
-
+//* router.use(httpRouteName, pathtoAPIFILE)
+//* ex. http://localhost:4001/api/destinations
 router.use('/destinations', require('./api/destinationsroute'));
+
+//* ex. http://localhost:4001/api/categories
+router.use('/categories', require('./api/categoryroute'));
 
 
 

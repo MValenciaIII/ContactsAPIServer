@@ -17,7 +17,9 @@ class DestinationDao {
         })
     }
 
-
+    postBody(req, res) {
+        console.log(req.body)
+    }
 }
 
 module.exports = DestinationDao;
