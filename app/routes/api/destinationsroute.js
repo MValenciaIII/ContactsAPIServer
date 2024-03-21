@@ -17,4 +17,10 @@ router.post('/post', (req, res) => {
     dao.postBody(req, res);
 })
 
+//? THIS IS INSERTING INFORMATION TO OUR DESTINATIONS TABLE
+//* http://localhost:4001/api/destinations/createdestination
+router.post('/createdestination', (req, res) => {
+    dao.createDestination(req, res);
+})
+
 module.exports = router;
